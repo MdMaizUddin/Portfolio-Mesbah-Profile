@@ -1,0 +1,300 @@
+/* *{
+  margin: 0 auto;
+  max-width: 1200px;
+  
+}
+
+body{
+  background-color: lightgray;
+ 
+
+}
+.navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; 
+      background-color: #234444;
+      padding: 10px 20px;
+    }
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 10px 10px;
+  
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  position: relative;
+}
+
+
+
+.nav-left {
+      font-size: 24px;
+      color: white;
+    }
+span{
+  color: gray;
+  }
+
+.hero{
+  display: flex;
+  background-color:gainsboro;
+  padding: 80px 120px;
+}
+.hero-left{
+   padding: 10px 20px;
+   
+}  
+img{
+  border-radius: 50px;   
+}
+.hero-right{
+  text-decoration: solid;
+  word-spacing: 5px;
+  padding: 10px 20px;
+}
+a{
+  border: solid 2px;
+  border-radius: 40px;
+  margin-top: 10px;
+  box-sizing: 50px;
+  box-sizing: content-box;
+  width: 100px;
+}
+
+hr{
+  border: solid thick rgb(36, 86, 86);
+}
+   */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1a202c;
+  color: rebeccapurple;
+}
+
+.nav-left h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-left span {
+  color: #3182ce;
+}
+
+.nav-right{
+  position: relative;
+}
+
+.burger{
+  display: none;
+   cursor: pointer;
+  font-size: 1.5rem;
+  color: white;
+  padding: 10px;
+}
+
+.nav-right ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-right ul li {
+  margin-left: 1.5rem;
+}
+
+.nav-right ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-right ul li a:hover {
+  color: #3182ce;
+}
+
+@media(max-width: 768px){
+  .nav-right ul{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #333;
+    width: 200px;
+    padding: 10px;
+  }
+  .nav-right ul li{
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+  .burger{
+    display: block;
+  }
+}
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+  background-color: #e2e8f0;
+  min-height: 80vh;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-left .image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid #3182ce;
+  transition: background-color 0.3s;
+}
+
+.hero-left img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+.hero-right {
+  flex: 2;
+  margin-left: 2rem;
+}
+
+.hero-right h2 {
+  font-size: 3rem;
+  color: #2d3748;
+}
+
+.hero-right p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4a5568;
+}
+
+.hero-right a {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #3182ce;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.hero-right a:hover {
+  background-color: #2b6cb0;
+}
+
+/* Interest and Goal Section */
+.interestandgoal {
+  background-color: #f7fafc;
+  padding: 3rem 2rem;
+}
+
+.interestgoal {
+  text-align: center;
+}
+
+.interestgoalh2 {
+  font-size: 2.5rem;
+  color: #2d3748;
+  margin-bottom: 2rem;
+}
+
+.interestgoalimg {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  
+
+}
+
+.interestgoalimg img {
+  display: ;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.interestgoalimg img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left {
+    margin-bottom: 2rem;
+  }
+
+  .hero-right {
+    margin-left: 0;
+  }
+
+  .nav-right ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-right ul li {
+    margin: 1rem 0;
+  }
+
+  .interestgoalimg {
+    flex-direction: column;
+  }
+}
